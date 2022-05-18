@@ -1,0 +1,66 @@
+/*-------------------- accordion ----------------- */
+.faq-container{
+    background: $colorGreen;
+    padding-top: 30px;
+    .faq-title{
+        margin-top: 0;
+    }
+}
+.faq-box{
+    display: block;
+    padding: 10px; 
+    margin: auto;
+    max-width: 900px;
+    button{
+        width: 100%;
+        padding: 15px;
+        font-size: 1.5rem;
+        text-align: left;
+        border-radius: 0px;
+        border: 0.2px solid;
+        outline: none;
+        transition: 0.4s;
+        cursor: pointer;
+        padding: 8px 6px 8px 6px;
+        background-color: $colorYello;
+        font-weight:600;
+        z-index: 5;
+    }
+    .first-accordion{
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
+    .last-accordion{
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius:10px ;
+    }
+}
+.panel{
+    z-index: 3;
+    display: none;
+    text-align: justify;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    background-color: lighten($colorPink,10%);
+    line-height: 1.5;
+    // the shadow box is to full the empty space between the panel and the text
+    box-shadow: 0px -10px 0px 0px lighten($colorPink,10%);;
+}
+.active{
+    background-color: lighten($colorYello,15%)!important ;
+}
+
+.other-funders{
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@include mobile{
+
+    .other-funders{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+}

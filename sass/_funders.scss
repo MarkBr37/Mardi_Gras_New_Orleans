@@ -1,0 +1,98 @@
+/* --------------- funders-container ------------------ */
+.funders-container {
+    background-color: $colorPink;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 100px;
+    justify-items: center;
+
+    h3{
+        text-align: left;
+    }
+
+    .card {
+        max-width: 300px;
+        height: 400px;
+        background-color: $colorWhite;
+        text-align: justify;
+        box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.4);
+        display: grid;
+        grid-template-rows: 30% 55% 25%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        .card-image {
+            // grid-area: image;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-size: cover;
+        }
+        .card-text , .button-container{
+            padding: 10px;
+        }
+        .button-container{
+            text-align: center;
+            button{
+                border-radius: 15px;
+                background-color: $colorGreen;
+                a{
+                    display: block;
+                    color: $colorBlack;
+                    font-size: 1.4rem;
+                    font-family: $font-headlines;
+                }
+                &:hover{
+                    background-color: lighten($colorGreen,10%);
+                }
+            }
+        }
+
+    }
+
+    @include desktop {
+        // grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* -------------- funders Cards img ---------------- */
+.card_img-1 {
+    background-image: url(../images/funders_images//SheratonNewOrleansHotel.jpg);
+}
+
+.card_img-2 {
+    background-image: url(../images/funders_images//Walk-OnsBistreaux-and-Bar.jpg);
+}
+
+.card_img-3 {
+    background-image: url(../images/funders_images/Ace-Hotel-New-Orleans.jpg);
+}
+
+.card_img-4 {
+    background-image: url(../images/funders_images/The-Ritz-Carlton-New-Orleans.jpg);
+}
+
+.card_img-5 {
+    background-image: url(../images/funders_images/Premium-Parking-P402.jpg);
+}
+
+.card_img-6 {
+    background-image: url(../images/funders_images/Louisiana-Childrens-Museum.jpg);
+}
+
+.card_img-7 {
+    background-image: url(../images/funders_images/Museum-of-Death.jpeg);
+}
+
+.card_img-8 {
+    background-image: url(../images/funders_images/hauntedMuseum.jpg);
+}

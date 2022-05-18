@@ -1,0 +1,65 @@
+@import "variables-mixin";
+/* ----------- default --------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-text;
+    line-height: 1.5;
+    font-weight: 600;
+    background-color: $colorBlack;
+
+    h1 {
+        font-family: $font-titleText;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $font-headlines;
+        text-align: center;
+
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/*//------------- title in the home ---------- */
+.container-title {
+    text-align: center;
+    background-color: $colorYello;
+    padding: 10px 0 10px 0;
+
+    .box-title {
+        // width: 900px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p {
+        // width: 600px;
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@import "header_footer";
+@import "slideshow-container";
+@import "funders";
+@import "about";
+@import "gallery";
+@import "accordion";
+@import "form";

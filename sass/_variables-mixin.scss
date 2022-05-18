@@ -1,0 +1,102 @@
+$colorPink: #9453a6;
+$colorGreen: #8cbf3f;
+$colorYello: #f2cc0f;
+$colorWhite: #f2f2f2;
+$colorBlack: #0d0d0d;
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap');
+//name of the fonts
+//Pattaya
+//'Henny Penny'
+//Roboto
+
+
+$font-titleText: 'Henny Penny',
+cursive;
+$font-headlines:'Pattaya',
+sans-serif;
+$font-text:'Roboto',
+sans-serif;
+// font-family: 'Pattaya';
+// font-family: 'Henny Penny';
+// font-family: 'Roboto', sans-serif;
+
+/* -------------- columns --------------- */
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33%
+}
+
+.col-11 {
+    width: 91.66%
+}
+
+.col-12 {
+    width: 100%
+}
+
+//--------------------------------------------------------
+@mixin desktop {
+    @media (max-width:1200px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width:800px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:750px) {
+        @content;
+    }
+}
+
+@mixin sMobile {
+    @media (max-width:615px) {
+        @content;
+    }
+}

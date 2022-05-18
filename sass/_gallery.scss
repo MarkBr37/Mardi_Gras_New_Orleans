@@ -1,0 +1,23 @@
+/* ------------ gallery ---------------- */
+.gallery{
+    text-align: center;
+    font-size: 2rem;
+    background-color: $colorGreen;
+    padding-top: 15px;
+    img{
+        width: 300px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+    // border: 5px solid black;
+    }
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+    
+    @include mobile{
+        iframe{
+            width: 100%;
+        }
+    }
+}

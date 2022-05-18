@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap");
+/* -------------- columns --------------- */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* ----------- default --------------- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  background-color: #0d0d0d;
+}
+
+body h1 {
+  font-family: "Henny Penny", cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Pattaya", sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*//------------- title in the home ---------- */
+.container-title {
+  text-align: center;
+  background-color: #f2cc0f;
+  padding: 10px 0 10px 0;
+}
+
+.container-title .box-title {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-title h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container-title p {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* -------------------- nav bar-------------------------- */
+.logo {
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: block;
+  background-color: #9453a6;
+}
+
+header nav {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  justify-self: center;
+  margin: auto;
+}
+
+header ul {
+  margin: 0 auto;
+  width: 700px;
+  padding: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-grow: 2;
+}
+
+header ul a {
+  font-size: 1.6rem;
+  color: #0d0d0d;
+  font-family: "Pattaya", sans-serif;
+  display: block;
+}
+
+header ul li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header ul .nav_menu {
+  background-color: #8cbf3f;
+}
+
+header ul .nav_menu:hover {
+  background-color: #bad98b;
+}
+
+header ul .nav_menu1 {
+  background-color: #f2cc0f;
+}
+
+header ul .nav_menu1:hover {
+  background-color: #f7e170;
+}
+
+header ul .first_nav {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+header ul .last_nav {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+header #hamburger {
+  display: none;
+}
+
+header .logo {
+  margin-top: 5px;
+}
+
+header .emptybox {
+  flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  header .emptybox {
+    display: none;
+  }
+  header .logo-box {
+    display: inline;
+    flex-grow: 0;
+  }
+  header ul {
+    width: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav,
+  header ul {
+    width: 100%;
+  }
+  header nav {
+    display: block;
+  }
+  header ul {
+    display: none;
+  }
+  header ul li {
+    text-align: left;
+  }
+  header ul .first_nav {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  header ul .last_nav {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #9453a6;
+  }
+  header #hamburger {
+    display: block;
+    float: right;
+    padding: 20px;
+    font-size: 2.5rem;
+    color: #000;
+    margin-top: 5px;
+  }
+}
+
+/*------------ footer ----------------*/
+footer {
+  display: flex;
+  height: 220px;
+  width: 100%;
+  background-color: #0d0d0d;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-logo-box {
+  display: block;
+  width: 100px;
+  margin: 0px 0px 0px 80px;
+}
+
+footer .icons {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 54px;
+}
+
+footer .icons .icon {
+  padding: 10px;
+}
+
+footer .icons .icon img {
+  width: 50px;
+}
+
+footer .copyR {
+  width: 107px;
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 30px;
+  display: block;
+  margin: auto;
+  font-family: "Pattaya", sans-serif;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: 400px;
+  }
+  footer .icons,
+  footer .footer-logo-box {
+    margin: 50px 0 0 0;
+  }
+  footer .footer-logo-box {
+    width: 150px;
+  }
+  footer .logo {
+    width: 150px;
+  }
+  footer .icons {
+    height: 140px;
+    width: 222px;
+  }
+  footer .copyR {
+    left: 20%;
+  }
+}
+
+/* ----------------- Slideshow container ---------------- */
+.slideshow-container {
+  max-width: 1350px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-bigContainer {
+  background-color: #8cbf3f;
+  padding-bottom: 15px;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  opacity: 40%;
+}
+
+.text:hover {
+  background-color: #0d0d0d;
+  opacity: 90%;
+}
+
+@media (max-width: 750px) {
+  .text {
+    font-size: 1.2rem;
+  }
+}
+
+.dots {
+  text-align: center;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slideshow-container .active,
+.slideshow-container .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------- funders-container ------------------ */
+.funders-container {
+  background-color: #9453a6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 100px;
+  justify-items: center;
+}
+
+.funders-container h3 {
+  text-align: left;
+}
+
+.funders-container .card {
+  max-width: 300px;
+  height: 400px;
+  background-color: #f2f2f2;
+  text-align: justify;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-rows: 30% 55% 25%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.funders-container .card .card-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.funders-container .card .card-text, .funders-container .card .button-container {
+  padding: 10px;
+}
+
+.funders-container .card .button-container {
+  text-align: center;
+}
+
+.funders-container .card .button-container button {
+  border-radius: 15px;
+  background-color: #8cbf3f;
+}
+
+.funders-container .card .button-container button a {
+  display: block;
+  color: #0d0d0d;
+  font-size: 1.4rem;
+  font-family: "Pattaya", sans-serif;
+}
+
+.funders-container .card .button-container button:hover {
+  background-color: #a3cc65;
+}
+
+@media (max-width: 1200px) {
+  .funders-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .funders-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* -------------- funders Cards img ---------------- */
+.card_img-1 {
+  background-image: url(../images/funders_images//SheratonNewOrleansHotel.jpg);
+}
+
+.card_img-2 {
+  background-image: url(../images/funders_images//Walk-OnsBistreaux-and-Bar.jpg);
+}
+
+.card_img-3 {
+  background-image: url(../images/funders_images/Ace-Hotel-New-Orleans.jpg);
+}
+
+.card_img-4 {
+  background-image: url(../images/funders_images/The-Ritz-Carlton-New-Orleans.jpg);
+}
+
+.card_img-5 {
+  background-image: url(../images/funders_images/Premium-Parking-P402.jpg);
+}
+
+.card_img-6 {
+  background-image: url(../images/funders_images/Louisiana-Childrens-Museum.jpg);
+}
+
+.card_img-7 {
+  background-image: url(../images/funders_images/Museum-of-Death.jpeg);
+}
+
+.card_img-8 {
+  background-image: url(../images/funders_images/hauntedMuseum.jpg);
+}
+
+/*-------------------- about ----------------- */
+.about-container {
+  background-color: #f2cc0f;
+  padding: 50px;
+}
+
+section.about {
+  width: 80%;
+  margin: auto;
+  background-color: #f2cc0f;
+}
+
+section.about h1, section.about h2 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+section.about h1 {
+  font-size: 2.5rem;
+}
+
+section.about .mayors_section {
+  margin-bottom: 100px;
+}
+
+section.about .mayors_section .mayors_img {
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+}
+
+section.about p {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 750px) {
+  .about-container {
+    padding: 20px;
+  }
+  section.about {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* ------------ gallery ---------------- */
+.gallery {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #8cbf3f;
+  padding-top: 15px;
+}
+
+.gallery img {
+  width: 300px;
+  /* width of container */
+  height: 200px;
+  /* height of container */
+  object-fit: cover;
+}
+
+.gallery iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 750px) {
+  .gallery iframe {
+    width: 100%;
+  }
+}
+
+/*-------------------- accordion ----------------- */
+.faq-container {
+  background: #8cbf3f;
+  padding-top: 30px;
+}
+
+.faq-container .faq-title {
+  margin-top: 0;
+}
+
+.faq-box {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  max-width: 900px;
+}
+
+.faq-box button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: left;
+  border-radius: 0px;
+  border: 0.2px solid;
+  outline: none;
+  transition: 0.4s;
+  cursor: pointer;
+  padding: 8px 6px 8px 6px;
+  background-color: #f2cc0f;
+  font-weight: 600;
+  z-index: 5;
+}
+
+.faq-box .first-accordion {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.faq-box .last-accordion {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.panel {
+  z-index: 3;
+  display: none;
+  text-align: justify;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  background-color: #aa73b9;
+  line-height: 1.5;
+  box-shadow: 0px -10px 0px 0px #aa73b9;
+}
+
+.active {
+  background-color: #f6db58 !important;
+}
+
+.other-funders {
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 750px) {
+  .other-funders {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ------------ form --------------- */
+.form-container {
+  display: flex;
+  background-color: #8cbf3f;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.form-container .mask {
+  width: 500px;
+}
+
+.form-container .form-box {
+  flex-wrap: 2;
+  margin-left: 100px;
+  margin-right: 150px;
+}
+
+.form-container form {
+  max-width: 320px;
+  border: 3px solid;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f2cc0f;
+}
+
+.form-container form textarea {
+  width: 250px;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.form-container form .submit {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-container form .submit input {
+  font-family: "Pattaya", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 800px) {
+  .form-container .mask {
+    display: none;
+  }
+  .form-container .form-box {
+    padding: 10px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+/*-------------------- about ----------------- */
+.about-container{
+    background-color: $colorYello;
+    padding: 50px;
+}
+section.about{
+    // max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    background-color: $colorYello;
+    h1,h2{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .mayors_section{
+        
+        margin-bottom: 100px;
+        .mayors_img{
+            width: 100px;
+            float: left;
+            margin-right: 15px;
+        }
+    }
+    p{
+        text-align: justify;
+        font-size: 1.1rem;
+    }  
+}
+
+@include mobile{
+
+    .about-container{
+        padding: 20px;
+    }
+    section.about{
+        width: 100% ;
+        margin: 0;
+    }
+}
