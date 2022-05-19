@@ -1,2 +1,6 @@
-# Mardi_Gras_New_Orleans : HTML CSS SASS JS
+# Mardi_Gras_New_Orleans : 
+
+build with: HTML, CSS, SASS, JS
+
+## About
 A simple HTML project
